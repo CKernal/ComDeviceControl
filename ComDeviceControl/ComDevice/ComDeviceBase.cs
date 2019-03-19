@@ -80,6 +80,7 @@ namespace ComDeviceControl.ComDevice
         {
             try
             {
+                SerialDevice.DiscardInBuffer();
                 SerialDevice.Write(data, 0, data.Length);
             }
             catch (Exception ex)
